@@ -302,8 +302,8 @@ class SeleneElement(with_metaclass(DelegatingMeta, IWebElement)):
         if timeout is None:
             timeout = config.timeout
         # todo: implement proper cashing
-        # self._found = wait_for(self, condition, timeout)
-        _wait_with_screenshot(self._webdriver, self, condition, timeout)
+        self._found = wait_for(self, condition, timeout)
+        #_wait_with_screenshot(self._webdriver, self, condition, timeout)
         return self
 
     # todo: consider removing some aliases
