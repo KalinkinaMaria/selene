@@ -27,7 +27,7 @@ NOTE: This is still an alpha version. Lately selene was completely refactored, a
 
 or using pip:
 
-    $ pip install git+https://github.com/yashaka/selene.git
+    $ pip install git+https://github.com/KalinkinaMaria/selene.git
 
 [It is preferable also to use  local virtualenv](https://gist.github.com/yashaka/a547c6e0df5f6c973acc04655b6e3072).
 
