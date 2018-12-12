@@ -190,7 +190,7 @@ def _wait_with_screenshot(webdriver, entity, condition, timeout=None, polling=No
         #screenshot = helpers.take_screenshot(webdriver, )
         #msg = '''{original_msg}
         #    screenshot: file://{screenshot}'''.format(original_msg=e.msg, screenshot=screenshot)
-        raise TimeoutException(msg, e.screen, e.stacktrace)
+        raise TimeoutException(e.msg, e.screen, e.stacktrace)
 
 
 class SeleneElement(with_metaclass(DelegatingMeta, IWebElement)):
